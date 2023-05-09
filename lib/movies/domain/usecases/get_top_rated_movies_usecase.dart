@@ -4,12 +4,12 @@ import 'package:movies/core/usecase/base_usecase.dart';
 import 'package:movies/movies/domain/entities/movie.dart';
 import 'package:movies/movies/domain/repository/base_movies_repository.dart';
 
-class GetTopRatedMoviesUseCase extends BaseUseCase<List<Movie>> {
+class GetTopRatedMoviesUseCase extends BaseUseCase<List<Movie>, NoParameters> {
   BaseMoviesRepository baseMoviesRepository;
   GetTopRatedMoviesUseCase(this.baseMoviesRepository);
 
   @override
-  Future<Either<Failure, List<Movie>>> call() async {
+  Future<Either<Failure, List<Movie>>> call(NoParameters parameters) async {
     return await baseMoviesRepository.getTopRatedMovies();
   }
 }

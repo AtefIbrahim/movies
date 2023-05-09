@@ -10,4 +10,7 @@ class AppConstants
   static const String baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
   static String imageUrl(String path) => baseImageUrl + path;
+
+  static String movieDetailsUrl(int movieId) => "${AppConstants.baseUrl}/movie/$movieId${AppConstants.movieApiKey}";
+  static String recommendationsMoviesUrl(String movieId) => "${AppConstants.baseUrl}/movie/$movieId/recommendations?${AppConstants.movieApiKey}";
 }
