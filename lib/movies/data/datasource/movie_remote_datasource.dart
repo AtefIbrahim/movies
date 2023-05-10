@@ -63,6 +63,7 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   @override
   Future<MovieDetailsModel> getMovieDetails(
       MovieDetailsParameters parameters) async {
+    print(AppConstants.movieDetailsUrl(parameters.movieId));
     final response = await Dio()
         .get(AppConstants.movieDetailsUrl(parameters.movieId));
 
@@ -77,6 +78,7 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   @override
   Future<List<MovieRecommendationsModel>> getMovieRecommendation(
       MovieRecommendationsParameters parameters) async {
+    print(AppConstants.recommendationsMoviesUrl(parameters.id));
     final response = await Dio()
         .get(AppConstants.recommendationsMoviesUrl(parameters.id));
 

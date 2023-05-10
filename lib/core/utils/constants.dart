@@ -11,6 +11,6 @@ class AppConstants
 
   static String imageUrl(String path) => baseImageUrl + path;
 
-  static String movieDetailsUrl(int movieId) => "${AppConstants.baseUrl}/movie/$movieId${AppConstants.movieApiKey}";
-  static String recommendationsMoviesUrl(int movieId) => "${AppConstants.baseUrl}/movie/$movieId/recommendations?${AppConstants.movieApiKey}";
+  static String movieDetailsUrl(int movieId) => "${AppConstants.baseUrl}/movie/$movieId?api_key=${AppConstants.movieApiKey}";
+  static String recommendationsMoviesUrl(int movieId) => "${AppConstants.baseUrl}/movie/$movieId/recommendations?api_key=${AppConstants.movieApiKey}";
 }
