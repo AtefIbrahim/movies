@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movies/core/services/services_locator.dart';
-import 'package:movies/core/utils/constants.dart';
+import 'package:movies/core/utils/app_constants.dart';
+import 'package:movies/core/utils/app_strings.dart';
 import 'package:movies/core/utils/enums.dart';
 import 'package:movies/movies/domain/entities/genre.dart';
 import 'package:movies/movies/domain/entities/movie_details.dart';
@@ -166,7 +167,7 @@ class MovieDetailContent extends StatelessWidget {
                           ),
                           const SizedBox(height: 8.0),
                           Text(
-                            'Genres: ${_showGenres(movie.genres)}',
+                            '${AppStrings.genres}: ${_showGenres(movie.genres)}',
                             style: const TextStyle(
                               color: Colors.white70,
                               fontSize: 12.0,
@@ -186,7 +187,7 @@ class MovieDetailContent extends StatelessWidget {
                       from: 20,
                       duration: const Duration(milliseconds: 500),
                       child: Text(
-                        'More like this'.toUpperCase(),
+                        AppStrings.moreLikeThis.toUpperCase(),
                         style: const TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.w500,

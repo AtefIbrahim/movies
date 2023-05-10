@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:movies/core/error/exceptions.dart';
 import 'package:movies/core/network/error_message_model.dart';
-import 'package:movies/core/utils/constants.dart';
+import 'package:movies/core/utils/app_constants.dart';
 import 'package:movies/movies/data/models/movie_details_model.dart';
 import 'package:movies/movies/data/models/movie_model.dart';
 import 'package:movies/movies/data/models/movie_recommendations_model.dart';
