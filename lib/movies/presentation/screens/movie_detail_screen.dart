@@ -10,6 +10,7 @@ import 'package:movies/core/utils/enums.dart';
 import 'package:movies/movies/domain/entities/genre.dart';
 import 'package:movies/movies/domain/entities/movie_details.dart';
 import 'package:shimmer/shimmer.dart';
+
 import '../controllers/movie_details_bloc.dart';
 
 class MovieDetailScreen extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movies/core/usecase/base_usecase.dart';
 import 'package:movies/core/utils/enums.dart';
